@@ -5,5 +5,11 @@ tasks:
     aliases:
       - app
     desc: "Run app"
+    env:
+      DB_HOST: localhost
+      DB_PORT: 5444
+      DB_USER: admin
+      DB_PASSWORD: admin
+      DB_NAME: bookcenterDB
     cmds:
       - go run cmd/main.go
